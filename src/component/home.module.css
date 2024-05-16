@@ -1,0 +1,54 @@
+.home_background {
+    background-image: url("https://w0.peakpx.com/wallpaper/1002/456/HD-wallpaper-anime-forest-scenery-forest-anime-mountain-nature.jpg"); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; 
+  }
+  
+  .home_title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: -1px -1px 5px #ff0000; 
+    margin-bottom: 1rem;
+    animation: rainbow 2s linear infinite alternate; 
+  }
+  
+  @keyframes rainbow {
+    0% { text-shadow: -1px -1px 5px #ff0000; }
+    
+    25% { text-shadow: -1px -1px 5px #fbf705; }
+    50% { text-shadow: -1px -1px 5px #07e91e; }
+    75%{ text-shadow: -1px -1px 5px #0000ff; } 
+    100%{ text-shadow: -1px -1px 5px #ff00ee; }     
+   
+  }
+  
+  .home_article {
+    font-size: 1.2rem; 
+    line-height: 1.5; 
+    margin-bottom: 2rem; 
+  }
+  
+  .home_image {
+    overflow: hidden;
+    border-radius: 50%; 
+    margin-bottom: 2rem; 
+  }
+  
+  .home_image img {
+    width: 100%; 
+    object-fit: cover; 
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .home_image:hover img {
+    transform: scale(1.1); 
+  }
+  
