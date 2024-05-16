@@ -1,54 +1,70 @@
 .home_background {
-    background-image: url("https://w0.peakpx.com/wallpaper/1002/456/HD-wallpaper-anime-forest-scenery-forest-anime-mountain-nature.jpg"); /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white; 
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.home_title {
+  font-family: "Poetsen One", sans-serif;
+  font-style: normal;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: -1px -1px 5px #ff0000;
+  margin-bottom: 1rem;
+  animation: rainbow 2s linear infinite alternate;
+}
+
+@keyframes rainbow {
+  0% {
+    text-shadow: -1px -1px 5px #ff0000;
   }
-  
-  .home_title {
-    font-size: 3rem;
-    font-weight: bold;
-    color: white;
-    text-shadow: -1px -1px 5px #ff0000; 
-    margin-bottom: 1rem;
-    animation: rainbow 2s linear infinite alternate; 
+
+  25% {
+    text-shadow: -1px -1px 5px #fbf705;
   }
-  
-  @keyframes rainbow {
-    0% { text-shadow: -1px -1px 5px #ff0000; }
-    
-    25% { text-shadow: -1px -1px 5px #fbf705; }
-    50% { text-shadow: -1px -1px 5px #07e91e; }
-    75%{ text-shadow: -1px -1px 5px #0000ff; } 
-    100%{ text-shadow: -1px -1px 5px #ff00ee; }     
-   
+  50% {
+    text-shadow: -1px -1px 5px #07e91e;
   }
-  
-  .home_article {
-    font-size: 1.2rem; 
-    line-height: 1.5; 
-    margin-bottom: 2rem; 
+  75% {
+    text-shadow: -1px -1px 5px #0000ff;
   }
-  
-  .home_image {
-    overflow: hidden;
-    border-radius: 50%; 
-    margin-bottom: 2rem; 
+  100% {
+    text-shadow: -1px -1px 5px #ff00ee;
   }
-  
-  .home_image img {
-    width: 100%; 
-    object-fit: cover; 
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .home_image:hover img {
-    transform: scale(1.1); 
-  }
-  
+}
+
+.home_article {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  font-weight: 100;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 8px hsl(132, 49%, 40%);
+}
+
+.home_image {
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.home_image img {
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.home_image:hover img {
+  transform: scale(1.1);
+}
