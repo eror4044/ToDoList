@@ -11,14 +11,14 @@ const Filter = () => {
   };
 
   return (
-    <div>
+    <>
       <input
         type="text"
         placeholder="Фильтр"
         value={filterText}
         onChange={onChange}
       />
-    </div>
+    </>
   );
 };
 
