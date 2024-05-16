@@ -1,49 +1,8 @@
-.nav_box {
-  position: fixed;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgb(123, 193, 123);
-  width: 100%;
-}
 .page_box{
   width: 100%;
-    min-height: 100vh; 
-    background-image: url("https://w0.peakpx.com/wallpaper/1002/456/HD-wallpaper-anime-forest-scenery-forest-anime-mountain-nature.jpg");
-    background-repeat:no-repeat;
-    background-size:cover;
+  min-height: 100vh; 
+  background-image: url("https://w0.peakpx.com/wallpaper/1002/456/HD-wallpaper-anime-forest-scenery-forest-anime-mountain-nature.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
 }
-.nav_link{
-position: relative;
-  appearance: none;
-  text-decoration: none;
-  
-  color: black;
-  font-size: 2rem;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 15px; 
-  transition: color 250ms linear;
-}
-.nav_link::after{
-    position: absolute;
-    content: ''; 
-    display: block; 
-    width: 100%; 
-    height: 5px; 
-    left: 0;
-    bottom: 0;
-    background-color: white; 
-    opacity: 0;
-    transition: opacity 250ms linear;
 
-}
-.nav_link:hover{
-    color: white;
-   
-  }
-  .nav_link:hover::after{
-    opacity: 1;
-  }
