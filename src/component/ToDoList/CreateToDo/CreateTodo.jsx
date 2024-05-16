@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { toggleCompleted, deleteTask } from "../../redux/ToDoSlice";
+import { toggleCompleted, deleteTask } from "../../../redux/ToDoSlice";
+import styles from "./createToDo.module.css";
 
 const CreateTodo = () => {
   const dispatch = useDispatch();

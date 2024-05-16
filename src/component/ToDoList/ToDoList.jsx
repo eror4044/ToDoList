@@ -1,12 +1,12 @@
 import FormAddToDo from"./FormAddToDo"
 import Filter from "./InputSearch";
 import StatusFilter from "./StatusFilter";
-import CreateTodo from "./CreateTodo";
-
+import CreateTodo from "./CreateToDo/CreateTodo";
+import styles from "./ToDoList.module.css"
 
 function ToDoList() {
     return (
-      <div>
+      <div className={styles.Root_box}>
         <FormAddToDo></FormAddToDo>
         <Filter></Filter>
         <StatusFilter></StatusFilter>
